@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+}
+
+header menu{
+    background-color: #133831;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#topo a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#logo{
+    width: 180px;
+    margin: 10px;
+}
+
+.inicio{
+    background-color: #451E11;
+    background-image: linear-gradient(transparent 60%,black 95%),url(imagens/mindspace-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color:white;
+    font-family: "Questrial", sans-serif;
+    font-size: 38px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.inicio h1{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+section{
+    flex-wrap: wrap;
+    background-color: #451E11;
+    display: grid;
+    grid-template-areas: 'img sobre';
+    grid-template-columns: 1fr 1fr;
+}
+
+section img{
+    grid-area: img;
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 50px;
+    margin-left: 90px;
+}
+
+.sobre{
+    grid-area: sobre;
+    color: white;
+    max-width: 500px;
+    font-family: "Questrial", sans-serif;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.sobre img{
+    width: 70px;
+    height: 70px;
+}
+
+.sobre h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.sobre h3{
+    line-height: 25px;
+}
+
+.frase{
+    height: 400px;
+    background-image: url(imagens/frase.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frase p{
+    font-size: 35px;
+    color: white;  
+    font-family: "Aboreto", system-ui;
+    text-align: center;
+    padding: 160px;
+}
+
+#cor{
+    color: #BC6855;
+}
+
+.cadastro{
+    background-color: #396047;
+    color: white;
+    font-family: "Aboreto", system-ui;
+    padding: 50px;
+    height: 400px;
+}
+
+.cadastro h1{
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.cadastro h2{
+    margin-bottom: 40px;
+}
+
+#separar{
+    display: flex;
+    gap: 20px;
+
+}
+
+.informaçoes{
+    background-color: #e3dac9;
+    color: black;
+    width: 300px;
+    height: 50px;
+    border: 2px solid black;
+    padding: 13px;
+}
+
+#botao{
+    background-color: #98af92;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    font-size: 28px;
+    width: 270px;
+    height: 70px;
+    border-radius: 20px;
+    margin-left: 170px;
+}
+
+#botao:hover{
+    background-color: #451E11;
+    transform: scale(1.1);
+    color: #e3dac9;
+}
+
+nav{
+    background-color: #133831;
+    list-style: none;
+    color: white;
+    font-family: "Questrial", sans-serif;
+    font-size: 23px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+.produtos img{
+    width: 300px;
+    height: 400px;
+}
+.produtos{
+    display:grid;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.produtos p{
+    text-align: center;
+    margin-top: 20px;
+}
+.produtos a{
+    color: #e3dac9;
+    text-decoration: none;
+}
+.produtos a:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #451E11;
+    color: white;
+}
+.rodape{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+}
+
+#logo img{
+    width: 450px;
+    margin-top: 65px;
+}
+
+#topicos{
+    margin-top: 60px;
+    margin-left: 50px;
+}
+#topicos li{
+    padding: 10px;
+    margin: 20px;
+    list-style: none;
+    font-size: 23px;
+}
+#topicos a{
+    color: #e3dac9;
+    text-decoration: none;
+}
+
+#icones{
+    grid-column:span 2;
+    text-align: center;
+}
+#icones img{
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+#icones img:hover{
+    transform: scale(1.2);
+}
+#icones p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#direitos{
+    text-align: center;
+    grid-column:span 2;
+    margin: 10px;
+}
